@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=====初期化=====*/
+* {
+  margin: 0px;
+  padding: 0px;
+  color:#4F4F4F;
+}
+
+li {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+h2{
+font-weight: 500;
+font-size: 1.2em;
+padding-top: 30px;
+}
+
+h4{
+  font-size: 0.8em;
+  border-left:solid 4px #4F4F4F;
+  padding-left: 10px;
+  height: 15px;
+  margin-bottom: 20px;
+}
+
+h3{
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #E6E6E6;
+}
+ 
+
+/* ヘッダー */
+#header-top{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+  background-color: white;
+  position: fixed;
+  z-index: 80;
+}
+
+#space{
+  height: 95px;
+}
+
+#navi{
+  margin-top: 10px;
+  margin-left: 170px;
+}
+
+#navi > ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#navi > ul > li{
+  background-color: #BDBDBD;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 10%;
+  color: white;
+}
+
+#navi > ul >.now{
+  background-color: white;
+  color: #BDBDBD;
+  border: solid 1px #BDBDBD;
+}
+
+#navi > ul > .arrow{
+  background-color: white;
+}
+
+
+.arrow{
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #E6E6E6;
+}
+.arrow::before,
+.arrow::after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+.y::before{
+  left: 5px;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 10px solid transparent;
+  border-left: 10px solid #BDBDBD;
+}
+
+.search_container form:hover{
+  opacity:0.6;
+}
+
+header p:hover{
+  opacity:0.6;
+}
+
+.border{
+  border-top: solid 1px #FAFAFA;
+  margin-top: 10px;
+}
+
+#banana{
+  margin-top: 35px;
+}
+
+/* 登録画面 */
+
+.form{
+  box-shadow: 0px 0px 3px 1px #ccc;
+  border-radius: 20px;
+  width: 700px;
+  background-color: white;
+  margin-left: 280px;
+  margin-bottom: 50px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.bank > h2,
+.imp > h2,
+.name > h2,
+.address > h2{
+  display: flex;
+}
+
+.title{
+  padding-right: 20px;
+  line-height: 50px;
+}
+
+input{
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.span{
+  margin-left: 10px;
+}
+
+.red{
+  color: white;
+  background-color: #F7819F;
+  border-radius: 10%;
+  padding: 3px;
+  font-size: 0.8em;
+  margin-left: 5px;
+  line-height: 52px;
+}
+
+.pad{
+  border-bottom: solid #BDBDBD 1px;
+  text-align: center;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-left: 250px;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border-radius: 20px;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.button {
+  background-color: #BDBDBD;
+  border: 1px solid #BDBDBD;
+  color: #fff;
+}
+.button:hover {
+  background-color: #fff;
+  border-color: #BDBDBD;
+  color: #BDBDBD;
+}
